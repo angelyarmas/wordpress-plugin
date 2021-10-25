@@ -12,4 +12,10 @@
  * @package         Wordpress_Plugin
  */
 
-// Your code starts here.
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+  die;
+}
+
+// Load composer dependencies
+require_once __DIR__ . '/vendor/autoload.php';
