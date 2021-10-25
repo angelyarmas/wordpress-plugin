@@ -1,7 +1,7 @@
 <?php
 namespace WPPL\Internals\Models;
 
-class TermModel
+class Term
 {
   public $term_id;
 

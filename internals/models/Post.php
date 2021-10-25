@@ -1,7 +1,7 @@
 <?php
 namespace WPPL\Internals\Models;
 
-class PostModel
+class Post
 {
 
 }
