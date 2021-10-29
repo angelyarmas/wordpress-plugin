@@ -13,7 +13,7 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
+if (!defined('WPINC')) {
   die;
 }
 
@@ -21,9 +21,9 @@ if ( ! defined( 'WPINC' ) ) {
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Run plugin hooks and filters.
-if ( !function_exists('wppl_initialize_plugin') ) {
+if (!function_exists('wppl_initialize_plugin')) {
   function wppl_initialize_plugin() {
-    if ( class_exists('\\WPPL\\Hooks') ) {
+    if (class_exists('\\WPPL\\Hooks')) {
       $plugin = New \WPPL\Hooks;
       $plugin->run();
     }
